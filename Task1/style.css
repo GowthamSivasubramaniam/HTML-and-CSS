@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body
+{
+    justify-items: center;
+}
+
+.navitems
+{
+    display: flex;
+    gap:2%;
+    list-style: none;
+    align-items: center;
+}
+.navitems li:first-child
+{
+   margin-right: auto;
+}
+a{
+    text-decoration: none;
+    font-family: nunito;
+    color: black;
+}
+header
+{
+    background-color: rgb(230, 233, 248);
+    padding: 1%;
+    width: 96%;
+    border-radius: 10px;
+}
+img
+{
+    width: 70px;
+}
+
+#home:target ,
+#about:target, 
+#services:target
+{
+    display: block;
+    font-family: sans-serif;
+
+}
+
+.page
+{
+    display: none;
+}
+.image
+{
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 0 gray ;
+
+} 
+.image:hover
+{
+    box-shadow: 0 4px 16px 0 gray ;
+}
+.card
+{ 
+    margin-top: 20px;
+    padding: 20px;
+    width: 96%;
+    height: 80%;
+    box-shadow: 0 2px 8px 0 gray ;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+    background-color: aliceblue;
+}
+h1
+{
+    font-family: nunito;
+    font-size: 70px;
+    color: rgb(0, 139, 65);
+   
+}
+a:hover
+{
+    background: transparent;
+    color: rgb(0, 34, 255);
+    
+}
+.head
+{
+    font-size: 30px;
+    font-family: nunito;
+    color: rgb(70, 41, 6);
+}
+
+@media (max-width: 899px) {
+h1
+{
+    font-family: nunito;
+    font-size: 40px;
+    color: rgb(0, 139, 65);
+   
+}
+.card
+{ 
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 2px 8px 0 gray ;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap:10%;
+    background-color: aliceblue;
+}
+.image
+{
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px 0 gray ;
+
+} 
+
+}
+@media (max-width: 899px) {
+    h1
+    {
+        font-family: nunito;
+        font-size: 40px;
+        color: rgb(0, 139, 65);
+       
+    }
+    .card
+    { 
+        margin-top: 20px;
+        padding: 20px;
+        width: 96%;
+        height: 80%;
+        box-shadow: 0 2px 8px 0 gray ;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        gap:10%;
+        background-color: aliceblue;
+    }
+    .image
+    {
+        width: 60%;
+        height: 60%;
+        border-radius: 30px;
+        box-shadow: 0 2px 8px 0 gray ;
+    
+    } 
+    }
+
+    @media (max-width: 750px) {
+        h1
+        {
+            font-family: nunito;
+            font-size: 30px;
+            color: rgb(0, 139, 65);
+           
+        }
+        .card
+        { 
+            margin-top: 20px;
+            padding: 20px;
+            width: 96%;
+            height: 80%;
+            box-shadow: 0 2px 8px 0 gray ;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10%;
+            background-color: aliceblue;
+        }
+        .image
+        {
+            width: 80%;
+            height: 60%;
+            border-radius: 30px;
+            box-shadow: 0 2px 8px 0 gray ;
+        
+        } 
+        .head
+        {
+        font-size: 20px;
+        font-family: nunito;
+        color: rgb(70, 41, 6);
+        }
+        a
+        {
+            font-size: 15px;
+        }
+        .foot{
+            font-size: 20px;
+             margin-top: 2%;
+            color: rgb(181, 119, 119);
+       }
+        }
+    @media (max-width: 470px) {
+        h1
+        {
+            font-family: nunito;
+            font-size: 20px;
+            color: rgb(0, 139, 65);
+           
+        }
+        .card
+        { 
+            margin-top: 20px;
+            padding: 20px;
+            width: 96%;
+            height: 80%;
+            box-shadow: 0 2px 8px 0 gray ;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10%;
+            background-color: aliceblue;
+        }
+        .image
+        {
+            width: 60%;
+            height: 40%;
+            border-radius: 30px;
+            box-shadow: 0 2px 8px 0 gray ;
+        
+        } 
+        .head
+        {
+        font-size: 15px;
+        font-family: nunito;
+        color: rgb(70, 41, 6);
+        }
+        a
+        {
+            font-size: 10px;
+        }  
+        .foot{
+            font-size: 20px;
+             margin-top: 2%;
+            color: rgb(48, 16, 16);
+       }
+        }
+
+footer
+{   
+    background-color: rgb(230, 233, 248);
+    width: 97%;
+    margin-top: 2%;
+    height: 15%;
+    border-radius: 10px;
+    justify-items: center;
+    align-content: center;
+    
+}
+.foot
+{
+    
+        font-size: 40px;
+        margin-top: 2%;
+        color: rgb(48, 16, 16);
+ 
+}
+@media (max-width: 1070px)
+{
+    .foot{
+        font-size: 20px;
+        margin-top: 2%;
+        color: rgb(48, 16, 16);
+   }
+}
