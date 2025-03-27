@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+body {
+   justify-items: center;
+   align-content: center;
+}
+.grid-container
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 3%;
+  column-gap:4%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.image {
+  border-radius: 20px;
+}
+.card {
+  padding: 20px;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0 2px 8px 0 gray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: nunito;
+  font-size: 10px;
+  gap: 10%;
+  background-color: rgb(153, 150, 150);
+  transition: background-color 2s, box-shadow 3s, color 4s;
+}
+.grid-container > .card:nth-child(odd):hover {
+  box-shadow: 0 8px 18px 0 rgb(20, 121, 209);
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.grid-container > .card:nth-child(even):hover {
+  box-shadow: 0 8px 18px 0 rgb(20, 209, 174);
+  background-color: rgba(73, 71, 71, 0.94);
+  color: rgb(248, 244, 244);
+}
+@media (max-width: 1045px) {
+  .grid-container
+{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 5%;
+  row-gap: 5%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.image {
+  border-radius: 20px;
+}
+.card {
+  padding: 20px;
+  width: 300px;
+  height: 90%;
+  box-shadow: 0 2px 8px 0 gray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: nunito;
+  font-size: 10px;
+  gap: 10%;
+  background-color: rgb(153, 150, 150);
+  transition: background-color 2s, box-shadow 3s, color 4s;
+}
+.grid-container > .card:nth-child(odd):hover {
+  box-shadow: 0 8px 18px 0 rgb(20, 121, 209);
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.grid-container > .card:nth-child(even):hover {
+  box-shadow: 0 8px 18px 0 rgb(20, 209, 174);
+  background-color: rgba(73, 71, 71, 0.94);
+  color: rgb(248, 244, 244);
+}
+}
+
+@media (max-width: 800px) {
+.grid-container
+{
+
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+
+  row-gap: 3%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.image {
+  border-radius: 20px;
+}
+.card {
+  padding: 20px;
+  width: 400px;
+  height: 100%;
+  box-shadow: 0 2px 8px 0 gray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: nunito;
+  font-size: 10px;
+  gap: 10%;
+  background-color: rgb(153, 150, 150);
+  transition: background-color 2s, box-shadow 3s, color 4s;
+}
+.grid-container > .card:nth-child(odd):hover {
+  box-shadow: 0 8px 18px 0 rgb(20, 121, 209);
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.grid-container > .card:nth-child(even):hover {
+  box-shadow: 0 8px 18px 0 rgb(20, 209, 174);
+  background-color: rgba(73, 71, 71, 0.94);
+  color: rgb(248, 244, 244);
+}
+}
