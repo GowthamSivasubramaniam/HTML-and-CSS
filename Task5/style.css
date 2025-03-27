@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+main {
+  position: relative;
+  width :100%;
+  height: 100%;
+  font-family: nunito;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.image {
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 3s;
+}
+h1
+{
+color: transparent;
+}
+.card {
+  padding: 20px;
+  width: 500px;
+  height: 20%;
+  box-shadow: 0 2px 8px 0 gray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: nunito;
+  font-size: 20px;
+  gap: 2%;
+  top:20%;
+  left:30%;
+  position: absolute;
+  background-color: rgb(255, 250, 250);
+  transition: background-color 3s, box-shadow 3s, color 4s ,height 1s;
+}
+.card:hover {
+  box-shadow: 0 8px 18px 0 rgb(20, 121, 209);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 70%;
+}
+
+.card:hover .image{
+  opacity: 1;
+    visibility: visible;
+  }
+
+#model:target
+{
+  display: block;
+}
+
+section{
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.model
+{
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.close
+{
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  align-content: center;
+  margin-left: 1200px;
+  margin-top: 120px;
+  border-radius: 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.button
+{
+  position: absolute;
+  width: 140px;
+  height: 60px;
+  background-color: rgb(22, 22, 22);
+  color: white;
+  text-align: center;
+  align-content: center;
+  margin-left: 120px;
+  margin-top: 10px;
+  border-radius: 15px;
+  
+}
+.button:hover
+{
+  background-color: rgb(75, 74, 74);
+  color: rgb(177, 175, 175);
+}
