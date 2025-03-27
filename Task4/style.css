@@ -5,11 +5,17 @@ body
     font-family: nunito;
 }
 
+@media (max-width: 1800px)
+{
 .navitems
 {
     display: flex;
     list-style: none;
 
+}
+.navitems :first-child
+{
+    margin-right: auto;
 }
 
 header
@@ -20,12 +26,12 @@ header
 }
 img
 {
-    width: 70px;
+    height: 10px;
 }
 h1
 {
     font-family: nunito;
-    font-size: 70px;
+    font-size: 50px;
     color: rgb(0, 139, 65);
    
 }
@@ -100,4 +106,112 @@ section
 }
 a{
     text-decoration: none;
+}
+
+}
+
+@media (max-width: 600px)
+{
+.navitems
+{
+    display: flex;
+    list-style: none;
+    
+}
+
+header
+{
+    background-color: rgb(230, 233, 248);
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    
+}
+h1
+{
+    font-family: nunito;
+    font-size: 30px;
+    color: rgb(0, 139, 65);
+   
+}
+div
+{
+    height:70px;
+    width: 70px;
+    align-content:center ;
+    justify-items: center;
+    text-align: center;
+    
+   
+}
+
+.head
+{
+    font-size: 22px;
+    font-family: nunito;
+    color: rgb(70, 41, 6);
+}
+
+
+.submenu
+{
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    align-content:center ;
+    justify-items: center;
+    text-align: center;
+    padding: 0; 
+    transition: opacity 0.5s ease-in-out, visibility 2s ease-in-out;
+    
+}
+.navitems :first-child
+{
+    margin-right: auto;
+}
+.submenu div
+{
+    background-color: rgb(169, 169, 216);
+    
+}
+.submenu div:hover
+{
+    background-color: rgb(155, 218, 252);
+}
+.dropdown
+{
+    position: relative;
+    margin: none;
+    font-size: 15px;
+}
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown:hover {
+    display: block;
+    background-color: rgb(169, 169, 216);
+
+}
+
+#Contacts:target,
+#Blogs:target,
+#SaaS:target,
+#Cloud:target
+{
+display: block;
+}
+
+section
+{
+    display: none;
+
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
 }
