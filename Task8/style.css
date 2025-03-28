@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body
+{
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: nunito;
+  font-size: 20px;
+}
+ 
+.accordion
+{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+input
+{
+    display: none;
+}
+
+label
+{   
+    
+    background-color: bisque;
+    padding: 2%;
+    border-radius: 20px;
+    transition: padding 2s;
+}
+label:hover
+{   
+    cursor: pointer;
+    padding: 3%;
+}
+
+.content
+{
+    background-color: rgb(184, 184, 184);
+    padding: 0.65%;
+    opacity: 0;
+    visibility: hidden;
+    color:transparent;
+    transition: max-width 3s,opacity 2s , visibility 2s ,color 3s;
+    max-width: 0;
+    border-radius: 20px;
+}
+
+#item1:checked + label + .content
+{
+    opacity: 1;
+    visibility: visible;
+   max-width: 100%;
+   color:black;
+
+}
+#item2:checked + label + .content
+{
+    opacity: 1;
+    visibility: visible;
+   max-width: 100%;
+   color:black;
+
+}
+#item3:checked + label + .content
+{
+    opacity: 1;
+    visibility: visible;
+   max-width: 100%;
+   color:black;
+
+}
