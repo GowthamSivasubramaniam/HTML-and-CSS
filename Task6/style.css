@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body
+{
+  
+    font-family: nunito;
+    font-size: 30px;
+    position: relative;
+}
+
+
+.page
+{   
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s , visibility 2s;
+}
+
+label
+{
+    background-color: black;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    align-content: center;
+    left:0;
+    top:0;
+    border-radius: 10px;
+    transition:  background-color 2s, color 2s ;
+    
+}
+
+input[type=radio]:checked + label{
+    background-color: rgb(170, 162, 162);
+    color: rgb(16, 15, 15);  
+    cursor:default;
+
+}
+input
+{
+display: none;
+}
+label:hover{
+    cursor:pointer;
+}
+
+#tab1:checked ~ #home {
+    opacity: 1;
+    visibility: visible;
+}
+#tab1:checked ~ #about
+{
+    display: none;
+}
+#tab1:checked ~ #services
+{
+    display: none;
+}
+
+#tab2:checked ~ #about {
+    opacity: 1;
+    visibility: visible;
+}
+#tab2:checked ~ #home
+{
+    display: none;
+}
+#tab2:checked ~ #services
+{
+    display: none;
+}
+#tab3:checked ~ #services {
+    opacity: 1;
+    visibility: visible;
+}
+#tab3:checked ~ #about
+{
+    display: none;
+}
+#tab3:checked ~ #home
+{
+    display: none;
+}
+h1{
+    font-size: 50px;
+}
+.tab-container
+{
+   background-color: rgb(170, 162, 162);
+   padding: 20px;
+   border-radius: 10px;
+   height: 30%;
+
+}
+
