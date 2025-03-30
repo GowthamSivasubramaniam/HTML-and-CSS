@@ -31,6 +31,8 @@ This project is a simple static HTML webpage that includes a navigation menu, th
 
 https://github.com/user-attachments/assets/4322c8d9-5343-49a1-9713-7e27425ceb1b
 
+https://github.com/user-attachments/assets/eccfba90-6b19-4ec5-9c01-9893d67b07d9
+
 
 
 
